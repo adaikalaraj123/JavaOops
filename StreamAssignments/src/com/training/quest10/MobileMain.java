@@ -47,7 +47,7 @@ public class MobileMain {
                 .forEach(System.out::println);
 
         // f. Get the list of mobiles by brand, sort by model and print only the mobile names
-        System.out.println("\n Samsung Mobile Models (Sorted) :");
+        System.out.println("\n Samsung Mobile Models (Sorted) :");		
         mobiles.stream()
                 .filter(m -> m.getBrand().equalsIgnoreCase("Samsung"))
                 .sorted(Comparator.comparing(Mobile::getModel))
